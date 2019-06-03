@@ -1,23 +1,53 @@
 .inventory-card {
-  width: 500px;
+  width: 600px;
+  padding: 20px 0;
   display: flex;
-  justify-content: center;
+  margin: 25px auto;
   border: 1px solid darkgray;
-  margin: 15px;
   border-radius: 5px;
 }
 
 .item-image {
-  padding: 15px;
+  padding: 25px;
 
 }
 
 .item-info {
-  padding: 15px;
+  padding: 25px;
 }
 
 .item-image img {
   width: 200px;
   height: 175px;
   border-radius: 50%;
+}
+
+
+form {
+  width: 700px;
+  padding: 20px 0;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1rem;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1rem;
+}
+
+button:hover {
+  border: 2px solid darkgray;
+  cursor: pointer;
 }

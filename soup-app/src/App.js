@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
+import Home from './components/homepage/Home'
+import Navigation from './components/navigation/Navigation'
+import AddInventory from './components/inventory/AddInventory'
 
 function App() {
   return (
     <div className="App">
-     <header>
-       <h1>Let's Serve Soup</h1>
-     </header>
+      <Navigation />
+      <Home />
+      <AddInventory />
     </div>
   );
 }

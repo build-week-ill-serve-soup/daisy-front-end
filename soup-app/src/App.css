@@ -1,3 +1,7 @@
+.home-page-header {
+  text-align: center;
+}
+
 .inventory-card {
   width: 600px;
   padding: 20px 0;
@@ -21,7 +25,6 @@
   height: 175px;
   border-radius: 50%;
 }
-
 
 form {
   width: 700px;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function InventoryForm() {
+function InventoryForm(props) {
     return (
         <div className='inventory-form'>
             <form>
@@ -15,6 +15,9 @@ function InventoryForm() {
                 />
                 <input
                     placeholder="Category"
+                />
+                <input
+                    placeholder="Image URL"
                 />
                 <button type="submit">
                     Add Item

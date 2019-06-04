@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
-export class withAuthenticate extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
+const withAuthenticate = PassedComponent => {
+    return class HOC extends Component {
+       render() {
+           return (
+               <div>
+                   <PassedComponent />
+               </div>
+           )
+       }
     }
 }
 

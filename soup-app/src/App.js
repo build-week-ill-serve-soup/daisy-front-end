@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import Home from './components/homepage/Home'
-import AddInventory from './components/inventory/AddInventory'
+
+import withAuthenticate from './components/authentication/withAuthenticate';
+import HomeContainer from './components/homepage/HomeContainer';
 
 function App() {
+  const ComponentFromWithAuthenticate = withAuthenticate(HomeContainer);
+  
   return (
     <div className="App">
-      <Home />
-      <AddInventory />
+      <ComponentFromWithAuthenticate />
     </div>
   );
 }

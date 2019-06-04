@@ -5,23 +5,32 @@ function InventoryForm(props) {
         <div className='inventory-form'>
             <form>
                 <input
+                    type="text"
                     placeholder="Item"
                 />
                 <input
+                    type="number"
                     placeholder="Quantity"
                 />
                 <input
+                    type="text"
                     placeholder="Unit Type"
                 />
                 <input
-                    placeholder="Category"
+                    type="text"
+                    placeholder="Supplier Name"
                 />
                 <input
+                    type="text"
+                    placeholder="Supplier Contact"
+                />
+                <input
+                    type="text"
                     placeholder="Image URL"
                 />
                 <button type="submit">
                     Add Item
-            </button>
+                </button>
             </form>
 
         </div>

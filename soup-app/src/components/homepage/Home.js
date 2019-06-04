@@ -6,12 +6,14 @@ export class Home extends Component {
     render() {
         return (
             <div className='home-page'>
+
                 <div className='home-page-header'>
                     <Header />
                 </div>
                 <div className='current-inventory'>
                     <CurrentInventory />
                 </div>
+                
             </div>
         )
     }

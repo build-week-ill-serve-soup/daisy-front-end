@@ -25,10 +25,14 @@ function App() {
 
       <Navigation />
 
+      <Route exact path="/" component={Home} />
+
       <Route path="/login" component={Login} />
+
       <Route path="/signup" component={Signup} />
-      <Route exact path="/" component={Home}></Route>
-      <Route path="/protectedHome" component={ProtectedHome}></Route>
+
+      <PrivateRoute exact path="/protectedHome" component={ProtectedHome} />
+
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 import withAuthenticate from './components/authentication/withAuthenticate';
 import HomeContainer from './components/homepage/HomeContainer';
@@ -21,10 +21,12 @@ function App() {
   return (
     <div className="App">
       {/* <ComponentFromWithAuthenticate /> */}
+      {/* <Route path="/" component={Navigation} /> */}
+
+      <Navigation />
+
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
-
-      <Route path="/" component={Navigation} />
       <Route exact path="/" component={Home}></Route>
       <Route path="/AddInventory" component={AddInventory}></Route>
     </div>

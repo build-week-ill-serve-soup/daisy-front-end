@@ -17,7 +17,7 @@ const Navigation = () => {
                         <Link to="/signup">Signup</Link>
                     </div>
                     <div>
-                        <Link to="/addInventory">Add Inventory</Link>
+                        <Link to="/protectedHome">Manage Inventory</Link>
                     </div>
                 </div>
             </div>

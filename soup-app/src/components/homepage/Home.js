@@ -7,12 +7,14 @@ export class Home extends Component {
         return (
             <div className='home-page'>
 
-                <div className='home-page-header'>
+                <h1>Welcome!</h1>
+
+                {/* <div className='home-page-header'>
                     <Header />
                 </div>
                 <div className='current-inventory'>
                     <CurrentInventory />
-                </div>
+                </div> */}
                 
             </div>
         )

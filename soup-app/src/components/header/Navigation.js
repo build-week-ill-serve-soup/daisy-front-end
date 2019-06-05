@@ -18,6 +18,16 @@ const Navigation = () => {
                             <p>Add to Inventory</p>
                         </NavLink>
                     </div>
+                    <div className="nav-link">
+                        <NavLink to="/Login">
+                            <p>Login</p>
+                        </NavLink>
+                    </div>
+                    <div className="nav-link">
+                        <NavLink to="/Signup">
+                            <p>Signup</p>
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </div>

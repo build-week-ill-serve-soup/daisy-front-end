@@ -6,7 +6,6 @@ function HomeContainer() {
     return (
         <div>
             <Home />
-            <AddInventory />
         </div>
     )
 }

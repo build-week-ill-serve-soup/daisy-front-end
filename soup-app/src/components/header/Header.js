@@ -6,8 +6,9 @@ function Header() {
         <div className='home-page-header'>
             <header>
                 <h1>Let's Serve Soup</h1>
+                {/* <Navigation /> */}
             </header>
-            <Navigation />
+
         </div>
     )
 }

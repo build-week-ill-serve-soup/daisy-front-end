@@ -16,12 +16,8 @@ import Signup from './components/login/Signup'
 import PrivateRoute from './components/privateRoute/PrivateRoute'
 
 function App() {
-  // const ComponentFromWithAuthenticate = withAuthenticate(HomeContainer);
-
   return (
     <div className="App">
-      {/* <ComponentFromWithAuthenticate /> */}
-      {/* <Route path="/" component={Navigation} /> */}
 
       <Navigation />
 

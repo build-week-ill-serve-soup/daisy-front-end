@@ -1,31 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import LoginForm from './LoginForm';
 
-class Login extends Component {
-    render() {
-        return (
-            <div className='login'>
-                <LoginForm />
-            </div>
-        )
-    }
-
-}
-
-export default Login
-
-
-
-
-/*
 export class Login extends Component {
-    state = {
-        credentials: {
+    constructor(props) {
+        super(props);
+        this.state = {
             username: '',
             password: ''
         }
-    };
+    }
 
     handleChange = e => {
         this.setState({
@@ -36,27 +19,6 @@ export class Login extends Component {
         });
       }
 
-    login = e => {
-        e.preventDefault();
-        let creds = {
-            name: e.target[0].value,
-            password: e.target[1].value,
-        }
-        axios
-            .post(
-                'https://kitchen-soup-backend.herokuapp.com/api/users/login', 
-                creds)
-
-            .then(res => {
-                this.setState({ token: res.data.token })
-                localStorage.setItem("token", res.data.token)
-                this.setState({ loggedIn: true });
-            })
-            .catch(err => {
-                console.log(err)
-            });
-    }
-
     render() {
         return (
             <div className="login-form">
@@ -64,13 +26,13 @@ export class Login extends Component {
                     <input
                         type="text"
                         placeholder="Username"
-                        value={this.state.credentials.username}
+                        value={this.state.username}
                         onChange={this.handleChange}
                     />
                     <input
                         type="password"
                         placeholder="Password"
-                        value={this.state.credentials.password}
+                        value={this.state.password}
                         onChange={this.handleChange}
                     />
                     <button
@@ -84,4 +46,3 @@ export class Login extends Component {
 }
 
 export default Login
-*/

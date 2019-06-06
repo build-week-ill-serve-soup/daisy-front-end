@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Route, Link } from 'react-router-dom';
+import { Router, Route, Link } from 'react-router-dom';
 
 import Navigation from './components/navigation/Navigation'
 import HomePublic from './components/homepage/HomePublic'
@@ -32,19 +32,21 @@ import PrivateRoute from './components/privateRoute/PrivateRoute'
 
 function App() {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/public">Public Page</Link>
-        </li>
-        <li>
-          <Link to="/protected">Protected Page</Link>
-        </li>
-      </ul>
-      <Route path="/public" component={HomePublic} />
-      <Route path="/login" component={Login} />
-      <PrivateRoute path='/protected' component={ProtectedHome} />
-    </div>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/public">Public Page</Link>
+          </li>
+          <li>
+            <Link to="/protected">Protected Page</Link>
+          </li>
+        </ul>
+        <Route path="/public" component={HomePublic} />
+        <Route path="/login" component={Login} />
+        <PrivateRoute path='/protected' component={ProtectedHome} />
+      </div>
+    </Router>
   );
 }
 

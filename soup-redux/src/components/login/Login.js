@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 // import HomeProtected from '../homepage/HomeProtected'
+import { login } from '../../actions';
 
 class Login extends Component {
     state = {
@@ -12,7 +13,7 @@ class Login extends Component {
   
     login = e => {
       e.preventDefault();
-      props.login(this.state.credentials)
+      this.props.login(this.state.credentials)
         .then(() => {
           // only fires if login call is successful
           this.props.history.push('/HomeProtected');

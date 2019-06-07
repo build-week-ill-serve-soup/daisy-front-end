@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import InventoryData from '../inventory/InventoryData'
+import React from 'react'
 
 const InventoryItem = props => {
     return (

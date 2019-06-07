@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 import { Link } from 'react-router-dom';
-import Signup from '../login/Signup'
+// import Signup from '../login/Signup'
 
-import CurrentInventory from '../inventory/CurrentInventory'
-import Header from '../header/Header'
+// import CurrentInventory from '../inventory/CurrentInventory'
+// import Header from '../header/Header'
 
 export class Home extends Component {
     render() {

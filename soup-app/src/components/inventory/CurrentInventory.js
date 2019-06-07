@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-import InventoryData from '../inventory/InventoryData'
 import InventoryItem from './InventoryItem';
 
 export class CurrentInventory extends Component {
@@ -13,15 +12,20 @@ export class CurrentInventory extends Component {
     }
 
     componentDidMount() {
+        const token = localStorage.getItem('token');
+        const requestOptions = {
+          headers: {
+            authorization: token
+          }
+        }
         axios
-          .get('https://kitchen-soup-backend.herokuapp.com/api/users/items')
-          .then(response => {
-            console.log(response);
-            this.setState(({ inventoryItems: response.data }));
+          .get('https://kitchen-soup-backend.herokuapp.com/api/users/items', requestOptions)
+          .then(res => {
+            this.setState({
+              inventoryItems: res.data
+            })
           })
-          .catch(error => {
-            console.error("Server Error", error);
-          })
+          .catch(err => console.log(err))
       }
 
     render() {

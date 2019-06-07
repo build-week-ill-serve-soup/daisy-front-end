@@ -8,7 +8,7 @@ import Home from './components/homepage/Home'
 import Login from './components/login/Login'
 import Signup from './components/login/Signup'
 import ProtectedHome from './components/homepage/ProtectedHome';
-import PrivateRoute from './components/privateRoute/PrivateRoute'
+import PrivateRoute from './components/authentication/PrivateRoute'
 
 function App() {
   return (

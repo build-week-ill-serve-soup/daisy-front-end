@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import SignupForm from './SignupForm';
 
 export class Signup extends Component {
     constructor(props) {
@@ -36,40 +37,8 @@ export class Signup extends Component {
 
     render() {
         return (
-            <div className="signup-form">
-                <form onSubmit={this.registerUser}>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        value={this.state.name}
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                    />                    <input
-                        type="text"
-                        name="email"
-                        placeholder="Email/Username"
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        type="text"
-                        name="role"
-                        placeholder="Your Role"
-                        value={this.state.role}
-                        onChange={this.handleChange}
-                    />
-                    <button
-                        type="submit">
-                        Signup!
-                    </button>
-                </form>
+            <div>
+                <SignupForm registerUser={this.registerUser} />
             </div>
         )
     }

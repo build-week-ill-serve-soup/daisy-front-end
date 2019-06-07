@@ -1,48 +1,30 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class LoginForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            username: '',
-            password: ''
-        }
-    }
-
-    onSubmit = e => {
-        e.preventDefault();
-    }
-
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value });
-    }
-
-    render() {
-        const { username, password } = this.state;
-        return (
-            <div>
-                <form onSubmit={this.onSubmit}>
-                    <h2>Login</h2>
-                    <input
-                        type="text"
-                        placeholder="Username"
-                        value={this.state.username}
-                        onChange={this.handleChange}
-                    />
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                    />
-                    <button
-                        type="submit">
-                        Login
-                    </button>
-                </form>
-            </div>
-        )
-    }
+const LoginForm = props => {
+    return (
+        <div className="login-form">
+            <form onSubmit={props.userLogin}>
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    value={props.username}
+                    onChange={props.handleChange}
+                />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    value={props.password}
+                    onChange={props.handleChange}
+                />
+                <button
+                    type="submit">
+                    Login
+                </button>
+            </form>
+        </div>
+    )
 }
 
 export default LoginForm

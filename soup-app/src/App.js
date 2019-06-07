@@ -1,18 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import { Route, Link } from 'react-router-dom';
-
-import withAuthenticate from './components/authentication/withAuthenticate';
-import ProtectedHome from './components/homepage/ProtectedHome';
+import { Route } from 'react-router-dom';
 
 import Navigation from './components/header/Navigation'
 import Home from './components/homepage/Home'
-import AddInventory from './components/inventory/AddInventory'
-
 import Login from './components/login/Login'
 import Signup from './components/login/Signup'
-
+import ProtectedHome from './components/homepage/ProtectedHome';
 import PrivateRoute from './components/privateRoute/PrivateRoute'
 
 function App() {

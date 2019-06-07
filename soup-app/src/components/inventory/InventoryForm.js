@@ -3,6 +3,7 @@ import React from 'react'
 const InventoryForm = props => {
     return (
         <div className='inventory-form'>
+            <h2>Add Inventory</h2>
             <form onSubmit={props.addItem}>
                 <input
                     onChange={props.handleInputChange}

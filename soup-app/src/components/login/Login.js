@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import LoginForm from './LoginForm';
 
-export class Login extends Component {
+class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {

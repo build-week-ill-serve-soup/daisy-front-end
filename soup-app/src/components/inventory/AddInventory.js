@@ -22,6 +22,7 @@ export class AddInventory extends Component {
         this.setState({ [e.target.name]: e.target.value });
     };
 
+   
     addItem = e => {
         e.preventDefault();
         axios
@@ -32,7 +33,7 @@ export class AddInventory extends Component {
                 })
                 this.props.history.push('/')
             })
-            .catch(error => console.log(error))
+            .catch(error => console.log(error.res))
     }
 
 

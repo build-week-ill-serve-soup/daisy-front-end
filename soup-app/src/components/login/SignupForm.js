@@ -3,6 +3,8 @@ import React from 'react'
 const SignupForm = props => {
     return (
         <div className="signup-form">
+            <h2>Sign up to get started!</h2>
+
             <form onSubmit={props.registerUser}>
                 <input
                     type="text"
@@ -17,7 +19,7 @@ const SignupForm = props => {
                     placeholder="Password"
                     value={props.password}
                     onChange={props.handleChange}
-                />                    
+                />
                 <input
                     type="text"
                     name="email"

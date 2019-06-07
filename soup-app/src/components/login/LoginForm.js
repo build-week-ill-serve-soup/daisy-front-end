@@ -3,6 +3,8 @@ import React from 'react'
 const LoginForm = props => {
     return (
         <div className="login-form">
+            <h2>Sign in to manage your inventory!</h2>
+
             <form onSubmit={props.userLogin}>
                 <input
                     type="text"

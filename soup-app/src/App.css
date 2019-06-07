@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-family: 'Lobster', cursive;
   font-size: 2rem;
+  text-align: center;
 }
 
 p, a, button {

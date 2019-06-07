@@ -36,12 +36,14 @@ export class Login extends Component {
                 <form onSubmit={this.userLogin}>
                     <input
                         type="text"
+                        name="username"
                         placeholder="Username"
                         value={this.state.username}
                         onChange={this.handleChange}
                     />
                     <input
                         type="password"
+                        name="password"
                         placeholder="Password"
                         value={this.state.password}
                         onChange={this.handleChange}

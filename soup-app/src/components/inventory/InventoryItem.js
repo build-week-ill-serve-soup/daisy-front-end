@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import InventoryData from '../inventory/InventoryData'
 
-
 const InventoryItem = props => {
     return (
         <div className='inventory-card'>

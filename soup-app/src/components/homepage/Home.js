@@ -15,7 +15,7 @@ export class Home extends Component {
                     </div>
                     <div className='home-page-text'>
                         <h2>Welcome!</h2>
-                        <p>I'll Serve Soup is a simple soup kitchen management software that takes care of your managing your inventory, so that you can focus on changing lives.</p>
+                        <p> <strong>Let's Serve Soup</strong> is a simple soup kitchen management software that takes care of your managing your inventory, so that you can focus on changing lives.</p>
                         <div className='nav-links get-started'>
                             <Link to="/signup">Get Started Now!</Link>
                         </div>

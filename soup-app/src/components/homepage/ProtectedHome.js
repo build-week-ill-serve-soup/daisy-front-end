@@ -1,15 +1,10 @@
 import React from 'react'
-import Home from './Home'
 import AddInventory from '../inventory/AddInventory'
-import Header from '../header/Header'
 import CurrentInventory from '../inventory/CurrentInventory'
 
 function ProtectedHome() {
     return (
-        <div>
-            <div className='home-page-header'>
-                <Header />
-            </div>
+        <div className='protected-home'>
             <div className='current-inventory'>
                 <CurrentInventory />
             </div>
@@ -21,6 +16,3 @@ function ProtectedHome() {
 }
 
 export default ProtectedHome
-
-
-

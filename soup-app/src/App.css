@@ -1,5 +1,87 @@
+/* 
+Headings Font:
+font-family: 'Lobster', cursive;
+Body Text Font:
+font-family: 'Lato', sans-serif; 
+*/
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p, a, button {
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  animation: fadein 2s;
+}
+
+.home-page {
+  animation: fadein 2s;
+}
+
 .home-page-header {
   text-align: center;
+  border-bottom: 3px dotted darkgray;
+  padding-bottom: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  margin: 25px;
+  text-decoration: none;
+  border: 1px solid darkgray;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  border: 2px solid darkgray;
+  cursor: pointer;
+}
+
+.get-started a {
+  padding: 15px 25px;
+  font-weight: bold;
+}
+
+.home-page {
+  padding: 25px;
+  display: flex;
+}
+
+.welcome-image img {
+  width: 350px;
+  border-radius: 2rem;
+  padding: 25px;
+}
+
+.home-page-text p {
+  font-size: 1.75rem;
+  line-height: 3rem;
 }
 
 .inventory-card {
@@ -13,7 +95,6 @@
 
 .item-image {
   padding: 25px;
-
 }
 
 .item-info {
@@ -30,15 +111,23 @@ form {
   width: 700px;
   padding: 20px 0;
   display: flex;
-  margin: 0 auto;
+  margin: 25px auto;
   flex-direction: column;
   border: 1px solid darkgray;
   border-radius: 5px;
 }
 
+.login-form {
+  animation: fadein 1s;
+}
+
+.signup-form {
+  animation: fadein 1s;
+}
+
 input {
-  width: 300px;
-  padding: 10px;
+  width: 350px;
+  padding: 12px;
   margin: 10px auto;
   font-size: 1rem;
 }
@@ -48,9 +137,14 @@ button {
   padding: 10px;
   margin: 10px auto;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 button:hover {
   border: 2px solid darkgray;
   cursor: pointer;
+}
+
+.protected-home {
+  animation: fadein 2s;
 }
